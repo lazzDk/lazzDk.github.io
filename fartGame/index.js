@@ -42,13 +42,11 @@ $(document).ready(function() {
             {
                 duration: audioFart.duration * 1000 ,
                 start: function(){
-                    toggleButtImage(false);
-                    handleFartEffect(currentPosition);
+                    handleEffects(currentPosition, false);
                     audioFart.play();
                 },
                 done: function() { 
-                    toggleButtImage(true);
-                    handleFartEffect(currentPosition, true);
+                    handleEffects(currentPosition, true);
                 }
         }); 
     });
@@ -57,17 +55,26 @@ $(document).ready(function() {
         $('#butt-image').attr('src', done ? 'assets/butt.png': 'assets/butt_white.gif'); 
     };
 
-    function handleFartEffect(currentPosition, done){
+    function handleEffects(currentPosition, done){
+        toggleButtImage(done);
+        handleFlameEffect();
+        handleFartMarks(currentPosition, done);
+    };
+
+    function handleFartMarks(currentPosition, done){
         var setPattern = $('#patternCheckbox').is(':checked');
         if(setPattern && !done) {
             addFartPattern(currentPosition.top, currentPosition.left);
         }
+    }
 
+    function handleFlameEffect(){
         var setFlame = $('#flameCheckbox').is(':checked');
-        if(!setFlame) {
+        if(setFlame) {
             $('.flame').toggle();
         }
-    };
+    }
+
 
     function getAngle(x1, y1, x2, y2) {
         var dy = y2 - y1;
