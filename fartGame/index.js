@@ -90,26 +90,25 @@ $(document).ready(function() {
         var centerLeft = currentLeft + 90;
 
         var adjustedHypLength = 120;
-        console.log(imageAngle);
 
         var adjustedAngle = Math.abs(imageAngle);
         adjustedAngle = adjustedAngle > 90 ?  180 - adjustedAngle : adjustedAngle;
         var xLength = Math.abs(Math.cos(adjustedAngle) * adjustedHypLength);
         var yLength = Math.abs(Math.sqrt(Math.pow(adjustedHypLength, 2)-Math.pow(xLength, 2)));
         if(imageAngle >= 90 && imageAngle < 180) {
-            logEvent(90, 180, xLength, yLength);
+            logEvent(imageAngle, 90, 180, xLength, yLength);
             centerTop -= yLength;
             centerLeft += xLength;
         } else if(imageAngle >= 0 && imageAngle < 90 ) {
-            logEvent(0, 90, xLength, yLength);
+            logEvent(imageAngle, 0, 90, xLength, yLength);
             centerTop += yLength;
             centerLeft -= xLength;
         } else if(imageAngle >= -90 && imageAngle < 0) {
-            logEvent(-90, 0, xLength, yLength);
+            logEvent(imageAngle, -90, 0, xLength, yLength);
             centerTop += yLength;
             centerLeft -= xLength;
         } else if(imageAngle >= -180 && imageAngle < -90) {
-            logEvent(-180, -90, xLength, yLength);
+            logEvent(imageAngle, -180, -90, xLength, yLength);
             centerTop -= yLength;
             centerLeft += xLength;
         } 
@@ -119,8 +118,9 @@ $(document).ready(function() {
         img.appendTo('.container');
     }
 
-    function logEvent(angle1, angle2, xLength, yLength) {
+    function logEvent(imageAngle, angle1, angle2, xLength, yLength) {
         return;
+        console.log(imageAngle.toFixed( 2)) ;
         console.log(">= " + angle1 + " - < " + angle2 + " - x: " + xLength.toFixed(2) + " y: " +yLength.toFixed(2))
     }
 
