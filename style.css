@@ -1,0 +1,41 @@
+html, body {
+    font-size: 1em;
+    color: #000000 !important;
+    font-family: 'Verdana' !important;
+}
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    height: 95vh;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.headline {
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 4em;
+}
+
+a {
+    text-decoration: none;
+    padding: 1em 1.5em;
+    text-transform: uppercase;
+}
+
+a.fart-game {
+    background-color: brown;    
+    color: white;
+}
+
+a.fart-game:hover {
+    background-color: lightgray;
+}
+ 

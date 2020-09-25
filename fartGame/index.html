@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="style.css" >
+        <title>Fart game</title>
+        <link rel="icon" type="image/png" href="assets/favicon.png">
+    </head>
+    <body>
+        <audio id="fart1" src="audio/fart1.mp3"></audio>
+        <audio id="fart2" src="audio/fart2.mp3"></audio>
+        <audio id="fart3" src="audio/fart3.mp3"></audio>
+        <audio id="fart4" src="audio/fart4.mp3"></audio>
+        <div class="settings">
+            <input type="checkbox" id="flameCheckbox" checked>Flame?
+            <input type="checkbox" id="patternCheckbox" checked >Pattern?
+        </div>
+        <div class="container">
+            <div>
+                <h1 class="headline">
+                    Fart game
+                </h1>
+                <h5 class="score">Number of farts: <span id="score">0</span></h5>
+            </div>
+            <div class="butt-container">
+                <div id="butt">
+                    <img id="butt-image" width="200" src="assets/butt_white.png" alt="butt" />
+                    <div class="flame"></div>
+                </div>    
+            </div>
+        </div>
+    </body>
+</html>
