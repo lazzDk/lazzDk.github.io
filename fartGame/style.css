@@ -87,4 +87,5 @@ body {
     height: 15px;
     width: 15px;
     position: absolute;
+    z-index: 50;
 }

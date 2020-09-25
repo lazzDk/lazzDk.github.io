@@ -83,6 +83,6 @@ $(document).ready(function() {
         var img = $('<img class="fart-pattern">');
         img.attr('src', 'assets/splat.svg');
         img.css({top: currentTop + 100, left: currentLeft});
-        img.append('.container');
+        img.appendTo('.container');
     }
 });

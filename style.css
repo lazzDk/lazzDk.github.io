@@ -30,6 +30,10 @@ a {
     text-transform: uppercase;
 }
 
+a:hover {
+    cursor: pointer;
+  }
+
 a.fart-game {
     background-color: brown;    
     color: white;
