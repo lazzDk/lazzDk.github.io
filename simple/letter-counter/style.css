@@ -1,0 +1,46 @@
+html, body {
+    font-size: 1em;
+    color: #000000;
+    font-family: 'Verdana' !important;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7e9a9a;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 1em 1.5em;
+    text-transform: uppercase;
+    background-color: 2a6592;
+    color: #ffffff;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border: 1px solid #000000;
+}
+
+.btn:hover {
+    background-color: #8ec3eb;
+    color: #000000;
+}
+
+.input-text {
+    padding: 1em;
+}
+
+.counter {
+    padding-top: 1.5em;
+}
+
+.counter span {
+    font-weight: bold;
+}

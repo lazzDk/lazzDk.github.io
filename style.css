@@ -28,10 +28,15 @@ a {
     text-decoration: none;
     padding: 1em 1.5em;
     text-transform: uppercase;
+    background-color: lightgray;
+    color: #000000;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
 }
 
 a:hover {
     cursor: pointer;
+    background-color: darkgray;
   }
 
 a.fart-game {
