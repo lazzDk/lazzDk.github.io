@@ -1,0 +1,65 @@
+html, body {
+    font-size: 1em;
+    color: #ffffff;
+    font-family: 'Verdana' !important;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #DD6031;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.todo-container {
+    width: 350px;
+}
+
+.todo-input {
+    display: flex;
+    margin-bottom: 10px;
+}
+.todo-input button {
+    background-color: #000;
+    color: #ffffff;
+}
+
+.todo-item { 
+    display: flex;
+    margin: 5px 0px;
+}
+.todo-item button {
+    background-color: #000;
+    color: #ffffff;
+}
+
+input {
+    padding: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 1em 1.5em;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn_remove {
+    background-color: #7B2F14;
+}
+
+.home_link {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}

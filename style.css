@@ -47,40 +47,40 @@ a:hover {
     background-color: #819C9C;
 }
 
-a:nth-child(1) { 
+a:nth-child(1n) { 
     background-color: #98C1D9;
     color: #000000 !important;
 }
 
-a:nth-child(1):hover { 
+a:nth-child(1n):hover { 
     background-color: #4289B3;
     color: #ffffff !important;
 }
 
-a:nth-child(2) { 
+a:nth-child(2n) { 
     background-color: #99C24D;
     color: #000000 !important;
 }
 
-a:nth-child(2):hover { 
+a:nth-child(2n):hover { 
     background-color: #5E7A2A;
     color: #ffffff !important;
 }
 
-a:nth-child(3) { 
+a:nth-child(3n) { 
     background-color: #EE6C4D;
 }
 
-a:nth-child(3):hover { 
+a:nth-child(3n):hover { 
     background-color: #CD3813;
 }
 
 
-a:nth-child(4) { 
+a:nth-child(4n) { 
     background-color: #3D5A80;
 }
 
-a:nth-child(4):hover { 
+a:nth-child(4n):hover { 
     background-color: #2E4460;
     
 }

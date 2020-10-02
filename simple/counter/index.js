@@ -9,7 +9,6 @@ $(document).ready(function() {
     setCounter();
 
     $('#decrease_btn').click(function(){
-        console.log('Clicked de') ;
         counter--;
         setCounter();
     });
