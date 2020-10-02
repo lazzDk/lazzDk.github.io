@@ -1,0 +1,33 @@
+html, body {
+    font-size: 1em;
+    color: #000000;
+    font-family: 'Verdana' !important;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.4s ease;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 1em 1.5em;
+    text-transform: uppercase;
+    background-color: 2a6592;
+    color: #ffffff;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border: 1px solid #000000;
+}
+
+.btn:hover {
+    background-color: #8ec3eb;
+    color: #000000;
+}
+

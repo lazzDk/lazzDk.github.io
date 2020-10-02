@@ -42,4 +42,13 @@ a.fart-game {
 a.fart-game:hover {
     background-color: lightgray;
 }
- 
+
+a.color-changer {
+    background-color:#2a6592;    
+    color: white;
+}
+
+a.color-changer :hover {
+    background-color:#4293D1;    
+    color: white;
+}
