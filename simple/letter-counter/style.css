@@ -1,5 +1,5 @@
 html, body {
-    font-size: 1em;
+    font-size: 2em;
     color: #000000;
     font-family: 'Verdana' !important;
 }
@@ -13,7 +13,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #7e9a9a;
+    background-color: #4D6A6D;
     height: 100vh;
     flex-direction: column;
 }
@@ -34,11 +34,12 @@ body {
 }
 
 .input-text {
-    padding: 1em;
+    padding: 0.5em;
+    font-size: 0.5em;
 }
 
 .counter {
-    padding-top: 1.5em;
+    padding-top:0.5em;
 }
 
 .counter span {
