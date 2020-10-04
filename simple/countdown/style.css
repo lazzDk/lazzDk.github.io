@@ -1,0 +1,38 @@
+html, body {
+    font-size: 1em;
+    color: #ffffff;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: #404040;
+}
+
+.countdown-box {
+    color: #E56D48;
+    display: flex;
+}
+
+.countdown-box div {
+    padding: 0px 5px;
+    text-transform: uppercase;
+}
+ 
+.countdown-box div span {
+    color: #ffffff;
+}
+
+.countdown-box:hover {
+    text-shadow:0 0 0 #BFDA7A, 0 0 4px black, 0 -10px 15px #BFDA7A, 0 3px 25px #BFDA7A;
+}
