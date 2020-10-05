@@ -4,14 +4,15 @@
     left: 2%;
     text-transform: uppercase;
     text-decoration: none;
-    color: #ffffff;
     font-size: 20px !important;
     border: 1px solid black;
     padding: 7px;
     box-shadow: 7px 7px 4px 0px rgba(0,0,0,0.75) ;
-    background-color: #404040;
+    color: #ffffff;
+    background-color: #2C3A47;
 }
 
 .home_link:hover {
-    background-color: #707070;
+    background-color: #ffffff;
+    color: #2C3A47;
 }
